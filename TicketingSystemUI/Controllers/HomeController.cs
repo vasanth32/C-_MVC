@@ -46,6 +46,10 @@ namespace TicketingSystemUI.Controllers
         {
             return View();
         }
+         public IActionResult Faq()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

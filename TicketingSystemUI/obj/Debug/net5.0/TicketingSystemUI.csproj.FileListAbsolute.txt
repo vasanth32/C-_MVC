@@ -360,3 +360,4 @@ E:\@udemy\TicketingSystem\TicketingSystemUI\TicketingSystemUI\obj\Debug\net5.0\r
 E:\@udemy\TicketingSystem\TicketingSystemUI\TicketingSystemUI\obj\Debug\net5.0\TicketingSystemUI.pdb
 E:\@udemy\TicketingSystem\TicketingSystemUI\TicketingSystemUI\obj\Debug\net5.0\TicketingSystemUI.genruntimeconfig.cache
 E:\@udemy\TicketingSystem\TicketingSystemUI\TicketingSystemUI\obj\Debug\net5.0\TicketingSystemUI.csproj.AssemblyReference.cache
+E:\@udemy\TicketingSystem\TicketingSystemUI\TicketingSystemUI\obj\Debug\net5.0\Razor\Views\Home\Faq.cshtml.g.cs

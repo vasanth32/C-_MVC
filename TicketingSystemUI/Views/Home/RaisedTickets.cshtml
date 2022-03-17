@@ -1,22 +1,52 @@
 ﻿<section class="content">
     <div class="content__inner">
         <header class="content__title">
-            <h1>Tickets</h1>
+            <h1>Admin - Raised Tickets</h1>
+            @*<div class="actions">
+            <a href="" class="actions__item zmdi zmdi-trending-up"></a>
+            <a href="" class="actions__item zmdi zmdi-check-all"></a>
 
-            <div class="actions">
-                <a href="" class="actions__item zmdi zmdi-trending-up"></a>
-                <a href="" class="actions__item zmdi zmdi-check-all"></a>
-
-                <div class="dropdown actions__item">
-                    <i data-toggle="dropdown" class="zmdi zmdi-more-vert"></i>
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <a href="" class="dropdown-item">Refresh</a>
-                    </div>
+            <div class="dropdown actions__item">
+                <i data-toggle="dropdown" class="zmdi zmdi-more-vert"></i>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a href="" class="dropdown-item">Refresh</a>
                 </div>
             </div>
+        </div>*@
         </header>
 
         <div class="card issue-tracker">
+
+         
+            <div style="padding: 40px 40px 0px 40px" class="row">
+
+                <div class="col-sm-4">
+                    <label>From Date</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="zmdi zmdi-calendar"></i></span>
+                        </div>
+                        <input type="date" class="form-control hidden-md-up" placeholder="Pick a date">
+                        <input type="text" class="form-control date-picker hidden-sm-down" placeholder="Pick a date">
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <label>To Date</label>
+
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="zmdi zmdi-calendar"></i></span>
+                        </div>
+                        <input type="date" class="form-control hidden-md-up" placeholder="Pick a date">
+                        <input type="text" class="form-control date-picker hidden-sm-down" placeholder="Pick a date">
+                    </div>
+                </div>
+                <div style="margin-top:10px" class="col-sm-4">
+                    <button type="button" class="btn btn-success">Submit</button>
+                </div>
+            </div>
             <div class="toolbar toolbar--inner">
                 <div class="toolbar__nav">
                     <a class="active" href="">Opened 25</a>
@@ -27,55 +57,55 @@
                 <div class="actions">
                     <i class="actions__item zmdi zmdi-search" data-ma-action="toolbar-search-open" data-toggle="tooltip" data-title="Search"></i>
 
-                    <div class="dropdown actions__item hidden-sm-down" data-toggle="tooltip" data-title="Tag">
-                        <i class="zmdi zmdi-label-alt-outline" data-toggle="dropdown"></i>
+                    @*<div class="dropdown actions__item hidden-sm-down" data-toggle="tooltip" data-title="Tag">
+                    <i class="zmdi zmdi-label-alt-outline" data-toggle="dropdown"></i>
 
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--sort">
-                            <div class="checkbox">
-                                <input type="checkbox" id="cb-tag-1" checked />
-                                <label for="cb-tag-1" class="checkbox__label">All</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="cb-tag-2" />
-                                <label for="cb-tag-2" class="checkbox__label">Tag One</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="cb-tag-3" />
-                                <label for="cb-tag-3" class="checkbox__label">Tag Two</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="cb-tag-4" />
-                                <label for="cb-tag-4" class="checkbox__label">Tag Three</label>
-                            </div>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--sort">
+                        <div class="checkbox">
+                            <input type="checkbox" id="cb-tag-1" checked />
+                            <label for="cb-tag-1" class="checkbox__label">All</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="cb-tag-2" />
+                            <label for="cb-tag-2" class="checkbox__label">Tag One</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="cb-tag-3" />
+                            <label for="cb-tag-3" class="checkbox__label">Tag Two</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="cb-tag-4" />
+                            <label for="cb-tag-4" class="checkbox__label">Tag Three</label>
                         </div>
                     </div>
+                </div>*@
 
-                    <div class="dropdown actions__item hidden-sm-down" data-toggle="tooltip" data-title="Severity">
-                        <i class="zmdi zmdi-info-outline" data-toggle="dropdown"></i>
+                    @*<div class="dropdown actions__item hidden-sm-down" data-toggle="tooltip" data-title="Severity">
+                    <i class="zmdi zmdi-info-outline" data-toggle="dropdown"></i>
 
-                        <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--sort">
-                            <div class="checkbox">
-                                <input type="checkbox" id="cb-severity-1" checked />
-                                <label for="cb-severity-1" class="checkbox__label">All</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="cb-severity-2" />
-                                <label for="cb-severity-2" class="checkbox__label">Severe</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="cb-severity-3" />
-                                <label for="cb-severity-3" class="checkbox__label">High</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="cb-severity-4" />
-                                <label for="cb-severity-4" class="checkbox__label">Medium</label>
-                            </div>
-                            <div class="checkbox">
-                                <input type="checkbox" id="cb-severity-5" />
-                                <label for="cb-severity-5" class="checkbox__label">Low</label>
-                            </div>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--sort">
+                        <div class="checkbox">
+                            <input type="checkbox" id="cb-severity-1" checked />
+                            <label for="cb-severity-1" class="checkbox__label">All</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="cb-severity-2" />
+                            <label for="cb-severity-2" class="checkbox__label">Severe</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="cb-severity-3" />
+                            <label for="cb-severity-3" class="checkbox__label">High</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="cb-severity-4" />
+                            <label for="cb-severity-4" class="checkbox__label">Medium</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="cb-severity-5" />
+                            <label for="cb-severity-5" class="checkbox__label">Low</label>
                         </div>
                     </div>
+                </div>*@
 
                     <div class="dropdown actions__item hidden-sm-down" data-toggle="tooltip" data-title="Project">
                         <i class="zmdi zmdi-book" data-toggle="dropdown"></i>
@@ -176,8 +206,8 @@
             <div class="listview listview--bordered">
 
                 <div class="listview__item">
-                    <img src="demo/img/contacts/2.jpg" class="listview__img" alt="">
-
+                    @*<img src="demo/img/contacts/2.jpg" class="listview__img" alt="">*@
+                    <i class="avatar-char bg-amber">E</i>
                     <div class="listview__content text-truncate text-truncate">
                         <a class="listview__heading" href="">Ed porta ut justo vitae volutpat. Aliquam varius tortor non egestas blandit. Fusce in sem lectus</a>
                         <p>#148 Opened 2 Days ago by Louie Holmes  - louieolmes</p>
@@ -186,13 +216,8 @@
                         <i class="zmdi zmdi-time"></i>17/11/2017 at 12:33
                     </div>
 
-                    <div class="issue-tracker__item hidden-sm-down">
-                        <span class="issue-tracker__tag bg-red">Issue</span>
-                    </div>
+                    <button type="button" style="width:110px" class="btn btn-primary">Issue</button>
 
-                    @*<div class="issue-tracker__item hidden-md-down">
-                       
-                    </div>*@
 
                     <div class="issue-tracker__item hidden-md-down">
                         <i class="zmdi zmdi-comments"></i> 04
@@ -212,18 +237,22 @@
                     </div>
                 </div>
 
-                <div class="listview__item">
-                    <img src="demo/img/contacts/3.jpg" class="listview__img" alt="">
 
+                <div class="listview__item">
+                    @*<img src="demo/img/contacts/3.jpg" class="listview__img" alt="">*@
+                    <i class="avatar-char bg-amber">D</i>
                     <div class="listview__content text-truncate">
                         <a class="listview__heading" href="">Dulla vel metus scelerisque ante sollicitudin commodo purus odio</a>
                         <p>#132 Opened Yesterday by Joseph Hamilton - louieolmes</p>
                         <i class="zmdi zmdi-time"></i>17/11/2017 at 12:33
                     </div>
 
-                    <div class="issue-tracker__item hidden-sm-down">
-                        <span class="issue-tracker__tag bg-blue">Suggestion</span>
-                    </div>
+                    @*<div class="issue-tracker__item hidden-sm-down">
+                    <span class="btn btn-primary">Suggestion</span>
+                </div>*@
+                    <button type="button" style="width:110px" class="btn btn-primary">Suggestion</button>
+                    @*<button type="button" class="btn btn-primary">Primary</button>*@
+
 
                     <div class="issue-tracker__item hidden-md-down">
                         @*<i class="zmdi zmdi-time"></i>19/11/2017 at 09:01*@
@@ -256,10 +285,10 @@
                         <i class="zmdi zmdi-time"></i>17/11/2017 at 12:33
                     </div>
 
-                    <div class="issue-tracker__item hidden-sm-down">
-                        <span class="issue-tracker__tag bg-green">Optimization</span>
-                    </div>
-
+                    @*<div class="issue-tracker__item hidden-sm-down">
+                    <span class="btn btn-primary">Optimization</span>
+                </div>*@
+                    <button type="button" style="width:110px" class="btn btn-primary">Optimization</button>
                     <div class="issue-tracker__item hidden-md-down">
                         @*<i class="zmdi zmdi-time"></i>10/11/2017 at 15:13*@
                     </div>
@@ -282,6 +311,7 @@
                     </div>
                 </div>
 
+
                 <div class="listview__item">
                     <i class="avatar-char bg-light-blue">T</i>
 
@@ -291,9 +321,11 @@
                         <i class="zmdi zmdi-time"></i>17/11/2017 at 12:33
                     </div>
 
-                    <div class="issue-tracker__item hidden-sm-down">
-                        <span class="issue-tracker__tag bg-red">Issue</span>
-                    </div>
+                    @*<div class="issue-tracker__item hidden-sm-down">
+                <span class="issue-tracker__tag bg-red">Issue</span>
+                    </div>*@
+                    <button type="button" style="width:110px" class="btn btn-primary">Issue</button>
+
 
                     <div class="issue-tracker__item hidden-md-down">
                         @*<i class="zmdi zmdi-time"></i>05/11/2017 at 19:00*@
@@ -317,18 +349,21 @@
                     </div>
                 </div>
 
-                <div class="listview__item">
-                    <img src="demo/img/contacts/1.jpg" class="listview__img" alt="">
 
+                <div class="listview__item">
+                    @*<img src="demo/img/contacts/1.jpg" class="listview__img" alt="">*@
+                    <i onclick="myFunction()" class="avatar-char bg-light-blue">S</i>
                     <div class="listview__content text-truncate">
-                        <a class="listview__heading" href="">Suspendisse aliquet dapibus ornare.</a>
+                        <div class="listview__heading">Suspendisse aliquet dapibus ornare.</div>
                         <p>#128 Opened on 22/10/2017 Days ago by Gary Schneider - louieolmes</p>
                         <i class="zmdi zmdi-time"></i>17/11/2017 at 12:33
                     </div>
 
-                    <div class="issue-tracker__item hidden-sm-down">
-                        <span class="issue-tracker__tag bg-red">Issue</span>
-                    </div>
+                    @*<div class="issue-tracker__item hidden-sm-down">
+                    <span class="issue-tracker__tag bg-red">Issue</span>
+                </div>*@
+                    <button type="button" style="width:110px" class="btn btn-primary">Issue</button>
+
 
                     <div class="issue-tracker__item hidden-md-down">
                         @*<i class="zmdi zmdi-time"></i>22/10/2017 at 01:54*@
@@ -351,176 +386,253 @@
                         </div>
                     </div>
                 </div>
+                <div id="hidenprofile" style="padding: 10px 10px 9px 89px !important; " class="hidden-profile content">
+                    @*<div  class="hidden-profile content">
+                    <h5>Ticket Title</h5>
+                    <p>Ornare non tortor. Nam quis ipsum vitae dolor porttitor interdum. Curabitur faucibus erat vel ante fermentum lacinia. Integer porttitor laoreet suscipit. Sed cursus cursus massa ut pellentesque. Phasellus vehicula dictum arcu, eu interdum massa bibendum.</p>
+
+                    <h5 class="mt-5">Ticket Description</h5>
+                    <p>Proin ac iaculis metus. Etiam nisi nulla, fermentum blandit consectetur sed, ornare non tortor. Nam quis ipsum vitae dolor porttitor interdum. Curabitur faucibus erat vel ante fermentum lacinia. Integer porttitor laoreet suscipit. Sed cursus cursus massa ut pellentesque. Phasellus vehicula dictum arcu, eu interdum massa bibendum sit amet.</p>
+                </div>*@
+                    <div class="content__inner content__inner--sm">
+
+                        <div class="card profile">
+
+                            <div class="profile__img">
+                                <img src="~/demo/img/contacts/2.jpg" alt="">
+
+                                <a href="" class="zmdi zmdi-camera profile__img__edit"></a>
+                            </div>
+
+                            <div class="profile__info">
+                                <p>Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magnae tiam porta sem malesuada magna mollis euismod.</p>
+
+                                <ul class="icon-list">
+                                    <li><i class="zmdi zmdi-phone"></i> 308-360-8938</li>
+                                    <li><i class="zmdi zmdi-email"></i> malinda@inbound.plus</li>
+                                    <li><i class="zmdi zmdi-twitter"></i> -mallinda-hollaway</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        @*<div class="toolbar">
+                        <nav class="toolbar__nav">
+                            <a class="active" href="profile-about.html">About</a>
+                            <a href="profile-photos.html">Photos</a>
+                            <a href="profile-contacts.html">Contacts</a>
+                        </nav>
+
+                        <div class="actions">
+                            <i class="actions__item zmdi zmdi-search" data-ma-action="toolbar-search-open"></i>
+                        </div>
+
+                        <div class="toolbar__search">
+                            <input type="text" placeholder="Search...">
+
+                            <i class="toolbar__search__close zmdi zmdi-long-arrow-left" data-ma-action="toolbar-search-close"></i>
+                        </div>
+                    </div>*@
+
+                        <div class="card">
+                            <div class="card-body">
+                                @*<h4 class="card-body__title mb-4">About Mallinda Hollaway</h4>
+
+                            <p>Pellentesque vitae quam quis tellus dignissim faucibus.  mattis felis at faucibus lobortis. Sed sit amet tellus dolor. Fusce quis sollicitudin velit. Praesent gravida ullamcorper lectus et tincidunt. Phasellus lectus quam, porta pharetra feugiat in, auctor eget dolor.</p>
+
+                            <p>Vestibulum tincidunt imperdiet egestas. In in nunc vitae elit tincidunt tristique id eu justo. Quisque gravida maximus orci, vulputate pharetra mauris commodo at. Mauris eget fermentum ipsum, quis faucibus neque. Fusce eleifend sapien sit amet convallis rhoncus. Proin commodo lacinia lectus, et tempus turpis.</p>*@
+                                <h5 class="card-body__title mb-4">Ticket Title</h5>
+                                <p>Ornare non tortor. Nam quis ipsum vitae dolor porttitor interdum. Curabitur faucibus erat vel ante fermentum lacinia. Integer porttitor laoreet suscipit. Sed cursus cursus massa ut pellentesque. Phasellus vehicula dictum arcu, eu interdum massa bibendum.</p>
+
+                                <h5 class="card-body__title mb-4">Ticket Description</h5>
+                                <p>Proin ac iaculis metus. Etiam nisi nulla, fermentum blandit consectetur sed, ornare non tortor. Nam quis ipsum vitae dolor porttitor interdum. Curabitur faucibus erat vel ante fermentum lacinia. Integer porttitor laoreet suscipit. Sed cursus cursus massa ut pellentesque. Phasellus vehicula dictum arcu, eu interdum massa bibendum sit amet.</p>
+                                <textarea rows="4" cols="50" name="comment" form="usrform">
+                                    Enter Your Comments here...</textarea>
+                                <br><br>
+
+                                <h4 class="card-body__title mb-4">Contact Information</h4>
+
+                                <ul class="icon-list">
+                                    <li><i class="zmdi zmdi-phone"></i>308-360-8938</li>
+                                    <li><i class="zmdi zmdi-email"></i>robertbosborne@inbound.plus</li>
+                                    <li><i class="zmdi zmdi-facebook"></i>robertbosborne</li>
+                                    <li><i class="zmdi zmdi-twitter"></i>-robertbosborne</li>
+                                    <li><i class="zmdi zmdi-pin"></i>5470 Madison Street Severna Park, MD 21146</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
                 @*<div class="listview__item">
-                    <i class="avatar-char bg-light-green">J</i>
+                <i class="avatar-char bg-light-green">J</i>
 
-                    <div class="listview__content text-truncate">
-                        <a class="listview__heading" href="">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</a>
-                        <p>#125 Opened on 12/09/2017 by Jonathan Kelly</p>
-                    </div>
+                <div class="listview__content text-truncate">
+                    <a class="listview__heading" href="">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</a>
+                    <p>#125 Opened on 12/09/2017 by Jonathan Kelly</p>
+                </div>
 
-                    <div class="issue-tracker__item hidden-sm-down">
-                        <span class="issue-tracker__tag bg-orange">Discussion</span>
-                    </div>
+                <div class="issue-tracker__item hidden-sm-down">
+                    <span class="issue-tracker__tag bg-orange">Discussion</span>
+                </div>
 
-                    <div class="issue-tracker__item hidden-md-down">
-                        <i class="zmdi zmdi-time"></i>12/09/2017 at 22:59
-                    </div>
+                <div class="issue-tracker__item hidden-md-down">
+                    <i class="zmdi zmdi-time"></i>12/09/2017 at 22:59
+                </div>
 
-                    <div class="issue-tracker__item hidden-md-down">
-                        <i class="zmdi zmdi-comments"></i> 18
-                    </div>
+                <div class="issue-tracker__item hidden-md-down">
+                    <i class="zmdi zmdi-comments"></i> 18
+                </div>
 
-                    <div class="issue-tracker__item actions">
-                        <div class="dropdown actions__item">
-                            <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+                <div class="issue-tracker__item actions">
+                    <div class="dropdown actions__item">
+                        <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
 
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
-                            </div>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="listview__item">
-                    <img src="demo/img/contacts/5.jpg" class="listview__img" alt="">
+            <div class="listview__item">
+                <img src="demo/img/contacts/5.jpg" class="listview__img" alt="">
 
-                    <div class="listview__content text-truncate">
-                        <a class="listview__heading" href="">Maecenas accumsan risus et enim tincidunt</a>
-                        <p>#124 Opened on 12/09/2017 by Samuel Doyle</p>
-                    </div>
+                <div class="listview__content text-truncate">
+                    <a class="listview__heading" href="">Maecenas accumsan risus et enim tincidunt</a>
+                    <p>#124 Opened on 12/09/2017 by Samuel Doyle</p>
+                </div>
 
-                    <div class="issue-tracker__item hidden-sm-down">
-                        <span class="issue-tracker__tag bg-green">Optimization</span>
-                    </div>
+                <div class="issue-tracker__item hidden-sm-down">
+                    <span class="issue-tracker__tag bg-green">Optimization</span>
+                </div>
 
-                    <div class="issue-tracker__item hidden-md-down">
-                        <i class="zmdi zmdi-time"></i>12/09/2017 at 02:50
-                    </div>
+                <div class="issue-tracker__item hidden-md-down">
+                    <i class="zmdi zmdi-time"></i>12/09/2017 at 02:50
+                </div>
 
-                    <div class="issue-tracker__item hidden-md-down">
-                        <i class="zmdi zmdi-comments"></i> 02
-                    </div>
+                <div class="issue-tracker__item hidden-md-down">
+                    <i class="zmdi zmdi-comments"></i> 02
+                </div>
 
-                    <div class="issue-tracker__item actions">
-                        <div class="dropdown actions__item">
-                            <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+                <div class="issue-tracker__item actions">
+                    <div class="dropdown actions__item">
+                        <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
 
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
-                            </div>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="listview__item">
-                    <img src="demo/img/contacts/6.jpg" class="listview__img" alt="">
+            <div class="listview__item">
+                <img src="demo/img/contacts/6.jpg" class="listview__img" alt="">
 
-                    <div class="listview__content text-truncate">
-                        <a class="listview__heading" href="">Morbi sit amet nunc a nunc venenatis sagittis vitae lacinia dolor</a>
-                        <p>#120 Opened on 30/08/2017 by Isaac Francis</p>
-                    </div>
+                <div class="listview__content text-truncate">
+                    <a class="listview__heading" href="">Morbi sit amet nunc a nunc venenatis sagittis vitae lacinia dolor</a>
+                    <p>#120 Opened on 30/08/2017 by Isaac Francis</p>
+                </div>
 
-                    <div class="issue-tracker__item hidden-sm-down">
-                        <span class="issue-tracker__tag bg-cyan">Version 2.0</span>
-                    </div>
+                <div class="issue-tracker__item hidden-sm-down">
+                    <span class="issue-tracker__tag bg-cyan">Version 2.0</span>
+                </div>
 
-                    <div class="issue-tracker__item hidden-md-down">
-                        <i class="zmdi zmdi-time"></i>30/08/2017 at 01:32
-                    </div>
+                <div class="issue-tracker__item hidden-md-down">
+                    <i class="zmdi zmdi-time"></i>30/08/2017 at 01:32
+                </div>
 
-                    <div class="issue-tracker__item hidden-md-down">
-                        <i class="zmdi zmdi-comments"></i> 10
-                    </div>
+                <div class="issue-tracker__item hidden-md-down">
+                    <i class="zmdi zmdi-comments"></i> 10
+                </div>
 
-                    <div class="issue-tracker__item actions">
-                        <div class="dropdown actions__item">
-                            <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+                <div class="issue-tracker__item actions">
+                    <div class="dropdown actions__item">
+                        <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
 
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
-                            </div>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="listview__item">
-                    <img src="demo/img/contacts/7.jpg" class="listview__img" alt="">
+            <div class="listview__item">
+                <img src="demo/img/contacts/7.jpg" class="listview__img" alt="">
 
-                    <div class="listview__content text-truncate">
-                        <a class="listview__heading" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat quis metus non placerat. Aenean vestibulum, dolor nec tempus consectetur</a>
-                        <p>#118 Opened on 10/07/2017 by Anders Gould</p>
-                    </div>
+                <div class="listview__content text-truncate">
+                    <a class="listview__heading" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat quis metus non placerat. Aenean vestibulum, dolor nec tempus consectetur</a>
+                    <p>#118 Opened on 10/07/2017 by Anders Gould</p>
+                </div>
 
-                    <div class="issue-tracker__item hidden-sm-down">
-                        <span class="issue-tracker__tag bg-orange">Discussion</span>
-                    </div>
+                <div class="issue-tracker__item hidden-sm-down">
+                    <span class="issue-tracker__tag bg-orange">Discussion</span>
+                </div>
 
-                    <div class="issue-tracker__item hidden-md-down">
-                        <i class="zmdi zmdi-time"></i>10/07/2017 at 01:11
-                    </div>
+                <div class="issue-tracker__item hidden-md-down">
+                    <i class="zmdi zmdi-time"></i>10/07/2017 at 01:11
+                </div>
 
-                    <div class="issue-tracker__item hidden-md-down">
-                        <i class="zmdi zmdi-comments"></i> 10
-                    </div>
+                <div class="issue-tracker__item hidden-md-down">
+                    <i class="zmdi zmdi-comments"></i> 10
+                </div>
 
-                    <div class="issue-tracker__item actions">
-                        <div class="dropdown actions__item">
-                            <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+                <div class="issue-tracker__item actions">
+                    <div class="dropdown actions__item">
+                        <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
 
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
-                            </div>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="listview__item">
-                    <i class="avatar-char bg-pink">L</i>
+            <div class="listview__item">
+                <i class="avatar-char bg-pink">L</i>
 
-                    <div class="listview__content text-truncate">
-                        <a class="listview__heading" href="">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</a>
-                        <p>#100 Opened on 01/07/2017 by Leo Macdonald</p>
-                    </div>
+                <div class="listview__content text-truncate">
+                    <a class="listview__heading" href="">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</a>
+                    <p>#100 Opened on 01/07/2017 by Leo Macdonald</p>
+                </div>
 
-                    <div class="issue-tracker__item hidden-sm-down">
-                        <span class="issue-tracker__tag bg-indigo">Future</span>
-                    </div>
+                <div class="issue-tracker__item hidden-sm-down">
+                    <span class="issue-tracker__tag bg-indigo">Future</span>
+                </div>
 
-                    <div class="issue-tracker__item hidden-md-down">
-                        <i class="zmdi zmdi-time"></i>10/07/2017 at 01:11
-                    </div>
+                <div class="issue-tracker__item hidden-md-down">
+                    <i class="zmdi zmdi-time"></i>10/07/2017 at 01:11
+                </div>
 
-                    <div class="issue-tracker__item hidden-md-down">
-                        <i class="zmdi zmdi-comments"></i> 10
-                    </div>
+                <div class="issue-tracker__item hidden-md-down">
+                    <i class="zmdi zmdi-comments"></i> 10
+                </div>
 
-                    <div class="issue-tracker__item actions">
-                        <div class="dropdown actions__item">
-                            <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
+                <div class="issue-tracker__item actions">
+                    <div class="dropdown actions__item">
+                        <i class="zmdi zmdi-more-vert" data-toggle="dropdown"></i>
 
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
-                                <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
-                            </div>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-menu--active dropdown-menu--icon">
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-check"></i>Respond</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-close"></i>Close</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-edit"></i>Edit</a>
+                            <a href="" class="dropdown-item"><i class="zmdi zmdi-delete"></i>Delete</a>
                         </div>
                     </div>
-                </div>*@
+                </div>
+            </div>*@
 
                 <div class="clearfix m-4"></div>
             </div>
