@@ -26,6 +26,8 @@
 
     <!-- App styles -->
     <link rel="stylesheet" href="~/css/app.min.css">
+
+
 </head>
 <body>
     <header class="header" style="background: #32c787 !important;">
@@ -369,9 +371,9 @@
                 </div>
 
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="">View Profile</a>
-                    <a class="dropdown-item" href="">Settings</a>
-                    <a class="dropdown-item" href="">Logout</a>
+                    <a class="dropdown-item"  asp-controller="Home" asp-action="Profile">View Profile</a>
+                    @*<a class="dropdown-item" href="">Settings</a>*@
+                    <a class="dropdown-item" asp-controller="Home" asp-action="Logout">Logout</a>
                 </div>
             </div>
 
@@ -549,6 +551,18 @@
     <script src="~/vendors/jszip/jszip.min.js"></script>
     <script src="~/vendors/datatables-buttons/buttons.html5.min.js"></script>
 
+
+    <script src="~/vendors/flot/jquery.flot.pie.js"></script>
+    <script src="~/vendors/flot.orderbars/jquery.flot.orderBars.js"></script>
+
+
+    <!-- Demo -->
+    <script src="~/demo/js/flot-charts/curved-line.js"></script>
+    <script src="~/demo/js/flot-charts/line.js"></script>
+    <script src="~/demo/js/flot-charts/bar.js"></script>
+    <script src="~/demo/js/flot-charts/dynamic.js"></script>
+    <script src="~/demo/js/flot-charts/pie.js"></script>
+    <script src="~/demo/js/flot-charts/chart-tooltips.js"></script>
     @*----------------------------*@
 
     <!-- App functions and actions -->
@@ -561,44 +575,44 @@
             x.style.visibility = 'hidden';
             //$(".hidden-profile").hide();
             //$("#hidenprofile").click(function () {
-                
+
             //        $(".hidden-profile").hide();
-                
+
             //});
             //$("#show").click(function () {
 
             //    $(".hidden-profile").show();
-        
+
             //});
         });
 
         function myFunction() {
             var x = document.getElementById('hidenprofile');
-         
+
             if (x.style.visibility === 'hidden') {
                 x.style.visibility = 'visible';
             } else {
                 x.style.visibility = 'hidden';
             }
         }
-        //function fnTitle() {
-        //    var x = document.getElementById('hidenprofile');
-        //    var i = document.getElementById('hiddenissue');
+            //function fnTitle() {
+            //    var x = document.getElementById('hidenprofile');
+            //    var i = document.getElementById('hiddenissue');
 
-        //    $("#hiddenissue").toggle("slow", function () {
-        //        // check paragraph once toggle effect is completed   
-        //    });
-        //    if (x.style.visibility === 'visible') {
-        //        x.style.visibility = 'hidden';
-        //    }
-        //    //if (i.style.visibility === 'visible') {
-        //    //    i.style.visibility = 'hidden';
-        //    //}
-        //    //else {
-        //    //    i.style.visibility = 'visible';
-        //    //}
+            //    $("#hiddenissue").toggle("slow", function () {
+            //        // check paragraph once toggle effect is completed
+            //    });
+            //    if (x.style.visibility === 'visible') {
+            //        x.style.visibility = 'hidden';
+            //    }
+            //    //if (i.style.visibility === 'visible') {
+            //    //    i.style.visibility = 'hidden';
+            //    //}
+            //    //else {
+            //    //    i.style.visibility = 'visible';
+            //    //}
 
-        //}
+            //}
 
     </script>
     @*<script src="~/js/LamaCustom.js"></script>*@

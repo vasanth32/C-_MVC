@@ -361,3 +361,6 @@ E:\@udemy\TicketingSystem\TicketingSystemUI\TicketingSystemUI\obj\Debug\net5.0\T
 E:\@udemy\TicketingSystem\TicketingSystemUI\TicketingSystemUI\obj\Debug\net5.0\TicketingSystemUI.genruntimeconfig.cache
 E:\@udemy\TicketingSystem\TicketingSystemUI\TicketingSystemUI\obj\Debug\net5.0\TicketingSystemUI.csproj.AssemblyReference.cache
 E:\@udemy\TicketingSystem\TicketingSystemUI\TicketingSystemUI\obj\Debug\net5.0\Razor\Views\Home\Faq.cshtml.g.cs
+E:\@udemy\TicketingSystem\TicketingSystemUI\TicketingSystemUI\obj\Debug\net5.0\Razor\Views\Home\Profile.cshtml.g.cs
+E:\@udemy\TicketingSystem\TicketingSystemUI\TicketingSystemUI\obj\Debug\net5.0\Razor\Views\Home\Logout.cshtml.g.cs
+E:\@udemy\TicketingSystem\TicketingSystemUI\TicketingSystemUI\bin\Debug\net5.0\Newtonsoft.Json.dll

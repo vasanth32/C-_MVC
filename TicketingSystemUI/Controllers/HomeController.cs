@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using TicketingSystemUI.Models;
 
@@ -18,11 +20,28 @@ namespace TicketingSystemUI.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public  IActionResult Index()
         {
             return View();
         }
-        public IActionResult TicketsList()
+        public async Task<IActionResult> TicketsList()
+        {
+            List<Tickets> ticketsList = new List<Tickets>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("https://localhost:44304/api/Tickets/GetTickets"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    ticketsList = JsonConvert.DeserializeObject<List<Tickets>>(apiResponse);
+                }
+            }
+            return View(ticketsList);
+        }  
+        public IActionResult Profile()
+        {
+            return View();
+        }
+        public IActionResult Logout()
         {
             return View();
         } 
@@ -41,7 +60,8 @@ namespace TicketingSystemUI.Controllers
          public IActionResult RaiseTicket()
         {
             return View();
-        } 
+        }   
+      
         public IActionResult UserCategories()
         {
             return View();
